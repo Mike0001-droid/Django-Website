@@ -2,7 +2,13 @@
     <title>
         Михаил Майоров {% now "Y" %}
     </title>
-    <h1>
-        Всем привет! Меня зовут Михаил Майоров, представляю свой второй собственноручный сайт!
-    </h1>
+    <h1>Меня зовут Майоров Михаил</h1>
+    <div class="article-list">
+        {% for article in articles %}
+            <div class="article">
+                <h2 class="article-title">{{article.title}}</h2>
+                <p class="article-summary">{{article.summary}}</p>
+            </div>
+        {%endfor%}
+    </div>
 </html>
