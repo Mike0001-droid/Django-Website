@@ -1,14 +1,18 @@
-<html>
-    <title>
-        Михаил Майоров {% now "Y" %}
-    </title>
-    <h1>Меня зовут Майоров Михаил</h1>
-    <div class="article-list">
-        {% for article in articles %}
-            <div class="article">
-                <h2 class="article-title">{{article.title}}</h2>
-                <p class="article-summary">{{article.summary}}</p>
-            </div>
-        {%endfor%}
+{% extends 'base.html' %}
+{% block title %}Михаил Майоров{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col-md-8 col-sm-12" >
+        <div class="article-list">
+            {% for article in articles %}
+                <div class="article">
+                    <h2 class="article-title">
+                        <a href="/blog/{{article.slug}}">{{ article.title }}</a>
+                    </h2>
+                    <p class="article-summary">{{article.summary}}</p>
+                </div>
+            {% endfor %}
+        </div>
     </div>
-</html>
+</div>
+{% endblock %}
