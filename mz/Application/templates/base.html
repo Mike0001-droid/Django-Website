@@ -3,7 +3,7 @@
     <head>
         <title>{% block title %}{% endblock %}</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-        <link href="{% static 'Application/style.css' %}" rel="stylesheet">
+        <link href="{% static 'Application/styles/style.css' %}" rel="stylesheet">
     </head>
     <body>
         <div class="container">
@@ -18,6 +18,15 @@
             </div>
             {% block content %}
             {% endblock %}
+        </div>
+
+        <div class="card" style="width: 18rem;" >
+            <img src="http://otzyvy-avtovladelcev.ru/img/auto-body-image/6037/97808.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Супер тачка</h5>
+                <p class="card-text">Вот эта тачка - это конкурент Мерседесу джи эль, джи эл эс, эта машина конкурент рендж роверу, ланд крузеру двухсотому</p>
+                <a href="https://vk.com/feed" class="btn btn-primary">Купить</a>
+            </div>
         </div>
     </body>
 </html>
