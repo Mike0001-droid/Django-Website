@@ -13,3 +13,4 @@ class Article(models.Model):
     
     def get_absolute_url(self):
         return reverse ('article_page', kwargs={'slug' : self.slug})
+
