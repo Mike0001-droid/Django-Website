@@ -8,40 +8,41 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Kanit&family=Quicksand:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
     </head>
-
     <body>
         <div class="container">
             <div class="row page-header">
                 <div class="col">
                     <h1 class="avatar-top">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1989/1989958.png" width="35" height="35">
                         <span class="author_name">
-                            <a class href="https://vk.com/a_may16" target="_blank">
-                                Анна Майорова 
-                            </a>
-
-                            <p> 
-                                <a class href="{% url 'courses' %}" target="_blank">
-                                    <div class="curs">
-                                        Курсы 
-                                    </div>
-                                </a>
-
-                                <a class href="https://vk.com/public214756121" target="_blank">
-                                    <div class="cont">
-                                        Группа в ВК
-                                    </div>
-                                </a>
-
-                            </p>
-                        </span> 
+                            Анна Майорова
+                        </span>
                     </h1>
+                    <p> 
+                        <a class href="{% url 'courses' %}" target="_blank" style="text-decoration: none;">
+                            <div class="ycon">
+                                <img src="https://cdn-icons-png.flaticon.com/512/3976/3976631.png" width="35" height="35">
+                            </div>
+
+                            <div class="curs">
+                                Курсы 
+                            </div>
+                        </a>
+                        <a class href="https://vk.com/public214756121" target="_blank" style="text-decoration: none;">
+                            <div class="ucon">
+                                <img src="https://cdn-icons-png.flaticon.com/512/4144/4144517.png" width="35" height="35">
+                            </div>
+
+                            <div class="cont">
+                                Группа в ВК
+                            </div>
+                        </a>
+                    </p> 
                 </div>
             </div>
-            
             {% block content %}
             {% endblock %}
         </div>
-
         <footer class="footer">
             <div class="text-center">
                 © Майорова Анна {% now "Y" %}
@@ -49,5 +50,3 @@
         </footer>
     </body>
 </html>
-
-

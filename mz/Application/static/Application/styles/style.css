@@ -3,13 +3,8 @@ html {
     min-height: 100%;
 }
 
-body{
-    background-image: url(фон.jpg);
-    background-attachment: fixed;
-}
 
 h1 a {
-    margin-left: -5em;
     color:black;
     text-decoration: none;
     font-family:  'Roboto', sans-serif;
@@ -67,25 +62,32 @@ h2.article-title a:hover { /*Отвечает за цвет наводки на 
 }
 
 .curs {
-    font-family: 'Kanit', sans-serif;
+    text-decoration: none;
+    color:black;
     font-size:x-large;
-    margin-left: -3.35em;
-}
-.cont {
+    margin-top: -1.4em;
     font-weight: 100;
-    margin-left: -4em;
-    margin-top: -1.2em;
+    margin-left:2em;
+}
+
+.cont {
+    margin-top: -2.7em;
     font-size: x-large;
+    margin-left: 2em;
+    color:black;
+    font-weight: 100;
+
+}
+
+.ucon {
+    margin-top: 2em;
+    margin-bottom: 2em;
     
 }
 
-
-
-
-
-
-
-
+.ycon {
+    margin-top:2.5em;
+}
 
 
 
