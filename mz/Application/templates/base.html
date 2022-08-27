@@ -6,54 +6,83 @@
         <link href="{% static 'Application/styles/style.css' %}" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Kanit&family=Quicksand:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Comfortaa:wght@500&family=Kanit&family=Open+Sans:wght@300&family=Quicksand:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="container">
             <div class="row page-header">
                 <div class="col">
                     <h1 class="avatar-top">
-                        <span class="author_name">
-                            Анна Майорова
-                        </span>
-                        <p> 
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                    <a class href="https://vk.com/public214756121" target="_blank" style="text-decoration: none;">
-                                        <img src="https://cdn-icons-png.flaticon.com/512/4144/4144517.png" width="40" height="40">
-                                        <span class="group">
-                                            Группа в Вк
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="list-group-item">
-                                    <a class href="{% url 'courses' %}" target="_blank" style="text-decoration: none;">
-                                        <img src="https://cdn-icons-png.flaticon.com/512/3976/3976631.png" width="40" height="40">
-                                        <span class="curs">
-                                            Курсы 
-                                        </span>
-                                    </a>
-                                </li>
-    
-                                <li class="list-group-item">
-                                    <a class href="https://vk.com/a_may16" target="_blank" style="text-decoration: none;">
-                                        <img src="https://cdn-icons-png.flaticon.com/512/2504/2504953.png" width="40" height="40">
-                                        <span class="vk">
-                                            Страница в Вк
-                                        </span>
-                                    </a>
-                                </li>
-    
-                                <li class="list-group-item">
-                                    <a class href="#" target="_blank" style="text-decoration: none;">
-                                        <img src="https://cdn-icons-png.flaticon.com/512/4096/4096283.png" width="40" height="40">
-                                        <span class="viber">
-                                            Связь в Viber
-                                        </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </p>
+                        <section>
+                            <div class="container py-16 h-100">
+                                <div class="row d-flex justify-content-center align-items-center h-100">
+                                    <div class="col-10">
+                                        <div class="card" style="border-radius: 15px;">
+                                            <div class="card-body p-1">
+                                                <div class="d-flex text-black">
+                                                    <div class="flex-shrink-0">
+                                                        <img src="https://sun9-77.userapi.com/impf/c850636/v850636180/19cbf7/tFA9JFWJ3uU.jpg?size=1536x2048&quality=96&sign=1b630f5faf961ead2d903625c2f4c433&type=album"
+                                                        alt="Generic placeholder image" class="img-fluid"
+                                                        style="width: 180px; border-radius: 10px;" />
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        <h5 class="mb-1">Анна Майорова</h5>
+                                                        <p class="mb-2 pb-1" style="color: #2b2a2a;">
+                                                            Репетитор по математике   
+                                                        </p>
+                                                        <div class="d-flex justify-content-start rounded-3 p-2 mb-2" style="background-color: #efefef;">
+                                                            <div class="osebe">
+                                                                <font size="4">
+                                                                    <p align="justify">
+                                                                        Здравствуйте! Меня зовут Майорова Анна Игоревна и я хотела бы немного рассказать о себе. В 2017 году я стала выпускницей-медалисткой лицея №120, а в 2022 году я закончила Педагогический университет города Челябинска и решила всерьёз занять репетиторством, 
+                                                                    так как имею неплохой запас знаний в этой сфере деятельности. Надеюсь, что мои курсы Вам помогут)
+                                                                    </p>
+                                                                </font>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex pt-1">
+                                                            <button type="button" class="btn btn-outline-primary me-1 flex-grow-1">
+                                                                <a class href="https://vk.com/public214756121" target="_blank" style="text-decoration: none;">
+                                                                    <img src="https://cdn-icons-png.flaticon.com/512/4144/4144517.png" width="40" height="40">
+                                                                    <span class="group">
+                                                                        Группа в Вк
+                                                                    </span>
+                                                                </a>
+                                                            </button>
+                                                            <button type="button" class="btn btn-outline-primary me-1 flex-grow-1">
+                                                                <a class href="{% url 'courses' %}" target="_blank" style="text-decoration: none;">
+                                                                    <img src="https://cdn-icons-png.flaticon.com/512/3976/3976631.png" width="40" height="40">
+                                                                    <span class="curs">
+                                                                        Курсы 
+                                                                    </span>
+                                                                </a>
+                                                            </button>
+                                                            <button type="button" class="btn btn-outline-primary me-1 flex-grow-1">
+                                                                <a class href="https://vk.com/a_may16" target="_blank" style="text-decoration: none;">
+                                                                    <img src="https://cdn-icons-png.flaticon.com/512/2504/2504953.png" width="40" height="40">
+                                                                    <span class="vk">
+                                                                        Страница в Вк
+                                                                    </span>
+                                                                </a>
+                                                            </button>
+                                                            <button type="button" class="btn btn-outline-primary me-1 flex-grow-1">
+                                                                <a class href="#" target="_blank" style="text-decoration: none;">
+                                                                    <img src="https://cdn-icons-png.flaticon.com/512/4096/4096283.png" width="40" height="40">
+                                                                    <span class="viber">
+                                                                        Связь в Viber
+                                                                    </span>
+                                                                </a>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </h1>
                 </div>
             </div>
@@ -67,4 +96,5 @@
         </footer>
     </body>
 </html>
+
 
